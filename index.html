@@ -308,7 +308,7 @@
             font-size: 1rem;
         }
 
-        /* ---- 新增三个按钮区域 (与整体设计融合) ---- */
+        /* ---- 三个按钮区域 (完全保留，无重复) ---- */
         .friend-sites {
             background: #111;
             padding: 30px 0 40px;
@@ -357,7 +357,7 @@
             box-shadow: 0 15px 30px rgba(102, 126, 234, 0.6);
             border-color: var(--accent-color);
         }
-        /* 给每个按钮一点点颜色微调，保持个性（可选） */
+        /* 个性微调 */
         .friend-btn.wbh {
             background: linear-gradient(145deg, #3b4b9b, #1f2b5c);
         }
@@ -367,7 +367,6 @@
         .friend-btn.ljq {
             background: linear-gradient(145deg, #4b9b7a, #1f5c47);
         }
-        /* 覆盖原有渐变色，但保留悬停效果 */
         .friend-btn.wbh:hover, .friend-btn.zhx:hover, .friend-btn.ljq:hover {
             filter: brightness(1.1);
         }
@@ -470,6 +469,7 @@
         </div>
     </nav>
     
+    <!-- 关于我 (只保留一次) -->
     <section id="about" class="about">
         <div class="container">
             <h2 class="section-title fade-in">关于我</h2>
@@ -481,7 +481,6 @@
                     <p>在我的职业生涯中，我曾参与过多个大型项目的开发，从电商平台到企业级应用，积累了丰富的实战经验。我热衷于学习新技术，并将其应用到实际项目中。</p>
                 </div>
                 <div class="about-image fade-in">
-                    <!-- 保持原图像，若无必要不修改；如果地址失效可换一个占位图，但保留原样 -->
                     <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=professional%20portrait%20of%20a%20tech%20professional%20with%20glasses%20in%20dark%20mode%20setting&image_size=square_hd" alt="个人照片">
                 </div>
             </div>
@@ -582,10 +581,9 @@
         </div>
     </section>
     
-    <!-- 原始footer保留，但为了布局清晰，在footer上方加入三个按钮区域，仍然在页面底部 -->
+    <!-- 三个按钮区域 (仅此一处，无重复) -->
     <section class="friend-sites">
         <div class="container">
-            <!-- 三个按钮，分别跳转到指定链接，且在同一页面切换 (target="_self")，确保“同一个页面就行切换” -->
             <a href="https://yuk405.github.io/" target="_self" class="friend-btn wbh">WBH</a>
             <a href="https://unwillingness.github.io/zhx.github.io/" target="_self" class="friend-btn zhx">ZHX</a>
             <a href="https://siesta1305539782-png.github.io/nina-Repository/" target="_self" class="friend-btn ljq">LJQ</a>
